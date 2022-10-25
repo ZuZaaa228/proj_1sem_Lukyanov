@@ -1,6 +1,11 @@
-def minmax(x,y):
-    if x > y:
-        x, y = y, x
-        return x, y
-    else:
-        return x, y
+def minmax(lst: list):
+    x = min(lst)  # Присвоение минимального числа в переменную
+    y = max(lst)  # Присвоение максимального числа в переменную
+    return f"x: {x} y: {y}"
+
+
+A, B, C, D = int(input("Введите первое чмсло")), int(input("Введите второе чмсло")), int(
+    input("Введите третье чмсло")), int(input("Введите четвертое чмсло"))
+lst = [A, B, C, D]  # Создание списка из введенных чисел
+
+print(minmax(lst))  # Вывод результата
