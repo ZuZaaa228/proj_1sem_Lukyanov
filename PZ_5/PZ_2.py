@@ -10,25 +10,25 @@ def minmax(x: int, y: int):
 A, B, C, D = input("Введите первое число: "), input("Введите второе число: "), input("Введите третье число: "), input(
     "Введите четвертое число: ")
 
-while type(A) != int or type(B) != int or type(C) != int or type(D) != int:  #Обработчик исключений
-    if type(A) != int:
+while type(A) != float or type(B) != float or type(C) != float or type(D) != float:  #Обработчик исключений
+    if type(A) != float:
         try:
-            A = int(A)
+            A = float(A)
         except ValueError:
             A = input("Введите целое число A без лишних символов: ")
-    if type(B) != int:
+    if type(B) != float:
         try:
-            B = int(B)
+            B = float(B)
         except ValueError:
             B = input("Введите целое число B без лишних символов: ")
-    if type(C) != int:
+    if type(C) != float:
         try:
-            C = int(C)
+            C = float(C)
         except ValueError:
             C = input("Введите целое число C без лишних символов: ")
-    if type(D) != int:
+    if type(D) != float:
         try:
-            D = int(D)
+            D = float(D)
         except ValueError:
             D = input("Введите целое число D без лишних символов: ")
 
