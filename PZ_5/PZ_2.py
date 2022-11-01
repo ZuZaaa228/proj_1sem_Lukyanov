@@ -1,8 +1,8 @@
 # Описать функцию minmax(X, Y) записывающую в переменную X минимальное, а в переменную Y максимальное из значений
 # Используя четыре вызова функции найти минимальное и максимальное из данных чисел A, B, C, D
-def minmax(x: int, y: int):
+def minmax(x: float, y: float):
     if x > y:
-        x, y = y, x  #x и y меняются местами
+        x, y = y, x  # x и y меняются местами
         return x, y
     return x, y
 
@@ -10,7 +10,7 @@ def minmax(x: int, y: int):
 A, B, C, D = input("Введите первое число: "), input("Введите второе число: "), input("Введите третье число: "), input(
     "Введите четвертое число: ")
 
-while type(A) != float or type(B) != float or type(C) != float or type(D) != float:  #Обработчик исключений
+while type(A) != float or type(B) != float or type(C) != float or type(D) != float:  # Обработчик исключений
     if type(A) != float:
         try:
             A = float(A)
@@ -31,7 +31,6 @@ while type(A) != float or type(B) != float or type(C) != float or type(D) != flo
             D = float(D)
         except ValueError:
             D = input("Введите целое число D без лишних символов: ")
-
 
 A, B = minmax(A, B)  # Первый вызов функции
 C, D = minmax(C, D)  # Второй вызов функции
