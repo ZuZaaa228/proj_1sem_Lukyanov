@@ -38,4 +38,4 @@ while type(N) != int:  # Обработчик исключений
 
 lst = list_append(N, lst)  # Создание списка
 first_even = first_even_element(lst)  # Присваивание функции
-print(count_addiction(lst, first_even))  #Вывод результата
+print(count_addiction(lst, first_even))  # Вывод результата
