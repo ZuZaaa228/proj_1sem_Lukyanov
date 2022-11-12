@@ -18,7 +18,7 @@ def first_even_element(default_list: list) -> int:  # Функция наход�
             return first
 
 
-def count_addiction(default_list: list, first_even_el: int | None) -> list:
+def count_addiction(default_list: list, first_even_el: int or None) -> list:
     # Функция которая увеличивает четные числа на первое четное число из списка
     if first_even_el is None:
         return default_list
