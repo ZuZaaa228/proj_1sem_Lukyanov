@@ -21,7 +21,7 @@ def list_append(n: int, list_gen: list) -> list:  # Функция генера�
 
 
 N, A, B = input("Введите длину списка: "), [], []
-
+    
 while type(N) != int:  # Обработчик исключений
     try:
         N = int(N)
@@ -29,4 +29,4 @@ while type(N) != int:  # Обработчик исключений
         N = input("Введите целое число: ")
 
 A = list_append(N, A)
-print(newlistfunc(A, B))
+print(f"Новый список: {newlistfunc(A, B)}")

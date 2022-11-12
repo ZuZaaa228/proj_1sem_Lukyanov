@@ -39,4 +39,4 @@ while type(N) != int or type(K) != int:  # Обработчик исключен
 
 gen_list = list_append(N, [])  # Создание листа с нужным размером
 
-print(offset_elements(N, K, gen_list))  # Вывод списка
+print(f"Результат: {offset_elements(N, K, gen_list)}")  # Вывод списка
