@@ -1,11 +1,12 @@
 # Дан список А размера N. Сформировать новый список B того же размера по следующему првилу:
 # элемент Bк равен сумме элементов списка А с номерами от 1 до К.
-def newlistfunc(first_list: list, second_list: list) -> list:  # Функция формирования списка по условию
-    for K in range(len(first_list)):
-        if K >= 1:  # Элемент списка с 0 индексом не будет включаться в сумму элементов
-            second_list.append(sum(first_list[1:K + 1]))
+def newlistfunc(first_list: list, second_list: list[int]) -> list:  # Функция формирования списка по условию
+    for K, item in enumerate(first_list):
+        if K > 1:
+            second_list.append(sum(first_list[1:K]))
         else:
             second_list.append(first_list[K])
+
     return second_list  # Возвращает уже наполненный список и сформированный список
 
 
