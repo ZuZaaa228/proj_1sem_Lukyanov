@@ -29,7 +29,6 @@ elements_are_multiples_of_4 = " ".join([str(x) for x in all_elements.split()
 file2.write(file2_elements)
 file2.close()
 
-
 # Создание и запись в файл 3, используя даннные из 1 и 2 файла
 file3 = open('file3.txt', 'w', encoding="UTF-8")
 
@@ -37,6 +36,6 @@ file3.writelines([f'Элементы первого и второго файло
                   f'Количество элементов первого и второго файлов: {count_elements}\n',
                   f'Индекс первого минимального элемента первого файла: {min_index}\n',
                   f'Индекс последнего максимального элемента второго файла: {max_index}\n',
-                  f'Элементы кратные 4 первого и второго файлов: {elements_are_multiples_of_4}\n',])
+                  f'Элементы кратные 4 первого и второго файлов: {elements_are_multiples_of_4}\n', ])
 
 file3.close()
