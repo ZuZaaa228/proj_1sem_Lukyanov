@@ -1,4 +1,4 @@
-punctuation_marks = ['.', '?', '!', '...', ',', ';', ':', '-']
+punctuation_marks = ['.', '?', '!', '...', ',', ';', ':', '-', '—']
 
 
 file1 = open('text18-30.txt', 'r', encoding="UTF-8")
@@ -10,8 +10,11 @@ for i in file_text:
 print(f"Содержимое файла: \n{file_text}\nКоличество знаков препинания: {count_marks}")
 file1.close()
 
-file2 = open('text18-30.txt', 'a')
+file2 = open('text18-30-2.txt', 'w', encoding="UTF-8")
 
-# file2.write("f")
+author = 'М. Ю. Лермонтов'
+title = 'Бородино'
+
+file2.write(file_text+f'\n\nАвтор: {author}\nНазвание произведения: {title}')
 
 file2.close()
