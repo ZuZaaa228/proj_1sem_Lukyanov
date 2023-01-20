@@ -1,20 +1,20 @@
-punctuation_marks = ['.', '?', '!', '...', ',', ';', ':', '-', '—']
+punctuation_marks = ['.', '?', '!', '...', ',', ';', ':', '-', '—']  # Список пунктуационных знаков
 
 
-file1 = open('text18-30.txt', 'r', encoding="UTF-8")
-file_text = file1.read()
+file1 = open('text18-30.txt', 'r', encoding="UTF-8")  # Открываем файл
+file_text = file1.read()  # Читаем файл
 count_marks = 0
-for i in file_text:
-    if i in punctuation_marks:
+for i in file_text:  # Пробегаемся по тексту
+    if i in punctuation_marks:  # Проверяет, является ли символ пунктуационным знаком.
         count_marks += 1
-print(f"Содержимое файла: \n{file_text}\nКоличество знаков препинания: {count_marks}")
-file1.close()
+print(f"Содержимое файла: \n{file_text}\nКоличество знаков препинания: {count_marks}")  # Выводит сначала содержимое, а потом количество знаков
+file1.close()  # Закрывает файл
 
-file2 = open('text18-30-2.txt', 'w', encoding="UTF-8")
+file2 = open('text18-30-2.txt', 'w', encoding="UTF-8")  # Открываем файл
 
-author = 'М. Ю. Лермонтов'
-title = 'Бородино'
+author = 'М. Ю. Лермонтов'  # Автор произведения
+title = 'Бородино'  # Название произведения
 
-file2.write(file_text+f'\n\nАвтор: {author}\nНазвание произведения: {title}')
+file2.write(file_text+f'\n\nАвтор: {author}\nНазвание произведения: {title}')  # Записывает в файл содержимое файла и автора стихотворения
 
-file2.close()
+file2.close()  # Закрывает файл
