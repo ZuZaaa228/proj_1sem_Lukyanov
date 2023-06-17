@@ -87,10 +87,10 @@ while True:
                 alive_enemies = len(enemy_walls)
             if event.key == pygame.K_v:
                 count_track += 1
-                pygame.mixer.stop()
-                pygame.mixer.Sound(f'sound/main_{count_track}.mp3').play()
                 if count_track == 11:
                     count_track = 1
+                pygame.mixer.stop()
+                pygame.mixer.Sound(f'sound/main_{count_track}.mp3').play()
     player.movement()
     player.shoot()
     # обновляем положение пуль и проверяем столкновение с объектами на карте
